@@ -1,0 +1,64 @@
+User Module Api's:-
+
+    [-] signUp  (password hash) (validation fields)
+    [-] signIn  (JWT generte) (validation fields)
+    [-] all user's details (admin permission) 
+    [-] Delete user by id (admin permission)  if (req.user.id === req.params.id || req.user.isAdmin) 
+    [-] Get user By id (same user  permission)  if (req.user.id === req.params.id || req.user.isAdmin) 
+    [-] Update user By id ( same user  permission)  if (req.user.id === req.params.id || req.user.isAdmin)  (validation fields)
+
+//Admin :-
+
+
+    "email": "admin@gmail.com", 
+    "password":"Rahul@123"
+
+
+
+// User :-
+{ 
+        "email": "tested@gmail.com", 
+        "password":"Rahul@123"
+}
+
+{
+     "email": "user@gmail.com", 
+    "password":"Rahul@123"
+}
+Caegory Module Api's:-
+   
+    [-] addCategory   (admin permission)   (validation fields)
+    [-] editCategory  (admin permission)  (validation fields)
+    [-] deleteCategory (admin permission) 
+    [-] view All 
+    [-] view BY id
+
+product Module Api's:-
+   
+    [-] addproduct   (admin permission)  (validation fields)
+    [-] editproduct  (admin permission)  (validation fields)
+    [-] deleteproduct (admin permission) 
+    [-] view All 
+    [-] view BY id
+
+
+cart Module Api's:-
+
+  [+]  productId
+  [+]  userId: 
+  [+]  quantity
+//add Cart with quantity
+{   
+    "userId": "{{id}}",
+    "productId": 1,
+    "quantity": 5
+}
+
+//remove Cart with quantity
+
+
+ {   
+    "userId": "{{id}}",
+    "productId": 1,
+  "deductQuantity:1
+}
